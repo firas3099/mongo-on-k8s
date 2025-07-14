@@ -67,6 +67,11 @@ To install MetalLB, run the following command:
 ```bash
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.15.2/config/manifests/metallb-native.yaml
 ```
+This installs the MetalLB components in your cluster.
+
+You need to create a pool of "public" IP addresses that match your network card and are available to assign to LoadBalancer services.
+
+For any additional information, visit https://metallb.io/.
 ---
 
 ## Notes
